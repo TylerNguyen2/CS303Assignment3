@@ -24,7 +24,7 @@ int main() {
 	stateDataMap["Texas"] = "Austin";
 
 	// output the data in stateDataMap
-	print_map(stateDataMap);
+	mapPrint(stateDataMap);
 
 	// changing the value of California to Los Angeles 
 	stateDataMap["California"] = "Los Angeles";
@@ -32,7 +32,7 @@ int main() {
 	// output capital when state name is entered.
 	cout << "Enter state name: ";
 	getline(cin, state);
-	print_capital(stateDataMap, state);
+	captialPrint(stateDataMap, state);
 
 	//Ask user to pick values for queue
 	cout << endl << " Pick 4 Values to be in the Queue" << endl; 

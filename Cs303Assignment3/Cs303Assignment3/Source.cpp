@@ -12,6 +12,7 @@ void move_to_rear(queue<int> a) {
 	a.push(a.front()); 
 	// Remove the first queue to the list
 	a.pop(); 
+	cout << "The queue is " << endl;
 	while (!a.empty()) {
 		// print out the queue in order
 		cout << a.front() << " "; 
@@ -41,14 +42,14 @@ bool isPalindrome(string s)
 
 
 // Output the data that is stored in the stateDataMap
-void print_map(map<string, string> stateDataMap) {
+void mapPrint(map<string, string> stateDataMap) {
 	for (map<string, string>::iterator it = stateDataMap.begin(); it != stateDataMap.end(); it++) {
 		cout << "State: " << it->first << ", Capital: " << it->second << endl;
 	}
 }
 
 // output capitalName with stateName that is entered by user
-void print_capital(map<string, string> stateDataMap, string state) {
+void captialPrint(map<string, string> stateDataMap, string state) {
 	map<string, string>::iterator it = stateDataMap.find(state);
 	if (it == stateDataMap.end()) {
 		cout << state << " is not found" << endl;

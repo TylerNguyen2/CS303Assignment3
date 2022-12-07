@@ -13,6 +13,6 @@ void move_to_rear(queue<int> a);
 
 bool isPalindrome(string s);
 
-void print_map(map<string, string> stateDataMap);
+void mapPrint(map<string, string> stateDataMap);
 
-void print_capital(map<string, string> stateDataMap, string state);
+void captialPrint(map<string, string> stateDataMap, string state);
